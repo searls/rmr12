@@ -1,2 +1,2 @@
 class window.Fibonacci
-  valueAt: -> 0
+  valueAt: (n) -> n
