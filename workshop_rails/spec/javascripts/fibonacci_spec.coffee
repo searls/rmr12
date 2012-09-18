@@ -6,3 +6,7 @@ describe "Fibonacci", ->
     Then -> @subject.valueAt(1) == 1
     Then -> @subject.valueAt(2) == 1
     Then -> @subject.valueAt(3) == 2
+    Then -> @subject.valueAt(4) == 3
+    Then -> @subject.valueAt(5) == 5
+
+
