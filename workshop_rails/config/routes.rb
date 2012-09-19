@@ -1,6 +1,8 @@
 Workshop::Application.routes.draw do
   mount JasmineRails::Engine => "/specs" unless Rails.env.production?
 
+  resources :fibs
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
