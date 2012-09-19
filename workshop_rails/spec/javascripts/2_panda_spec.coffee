@@ -1,12 +1,13 @@
 # Lots of different ways of saying the same thing
+# (cont. from panda_spec.js)
 
-# 1. The normal Jasmine API, inlined expectation
-describe "Panda (inlined)", ->
+# 3. The normal Jasmine API, inlined expectation
+describe "3. Panda (coffee, inlined)", ->
   it "is sad", ->
     expect(new Panda().disposition()).toBe("sad")
 
-# 2. The normal Jasmine API, extracting each phase
-describe "Panda (multi-step)", ->
+# 4. The normal Jasmine API, extracting each phase
+describe "4. Panda (coffee, multi-step)", ->
   beforeEach ->
     @subject = new Panda
 
@@ -16,8 +17,8 @@ describe "Panda (multi-step)", ->
     it "is sad", ->
       expect(@result).toBe("sad")
 
-# 3. The jasmine-given API
-describe "Panda (jasmine-given)", ->
+# 5. The jasmine-given API
+describe "5. Panda (coffee, jasmine-given)", ->
   Given -> @subject = new Panda
 
   describe "#disposition", ->
